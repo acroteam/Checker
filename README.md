@@ -6,7 +6,7 @@ This is a simple script, which can check your module compilation with different 
 
 # How to use it:
 1) Install docker on your machine.
-2) Build image using Dockerfile, run command in "general" directory
+2) Build image using Dockerfile, run command in "general" directory \
 run command: "docker build -t checker ."
 
 3) Download needed headers and move it to "LinuxHeaders" directory.
@@ -22,7 +22,7 @@ Example of file "versions":
 5) Move module which you want to test in "Module" directory
 
 
-6) You are ready to test your module, run command in "general" directory
+6) You are ready to test your module, run command in "general" directory \
 run command: "docker run --rm -v $(pwd)/LinuxHeaders:/LinuxHeader -v $(pwd)/Module:/Module -v $(pwd)/checker:/checker checker /checker/checkscript.sh /Module/PATH_TO_MODULE_MAKEFILE /checker" 
 
-7) If you need to change something start from step 3).
+7) If you need to change something (add new header or change testing module) start from step 3).
