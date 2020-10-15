@@ -13,10 +13,10 @@ run command: "docker build -t checker ."
 4) There is a file named "versions" in directory "checker" add all names of headers you download.
 
 Example of file "versions":
-3.10.0-123.el7.x86_64
-2.6.32-431.el6.x86_64
-3.10.0-962.3.2.lve1.5.33.el7.x86_64
-2.6.32-954.3.5.lve1.4.63.el6.x86_64
+3.10.0-123.el7.x86_64 \
+2.6.32-431.el6.x86_64 \
+3.10.0-962.3.2.lve1.5.33.el7.x86_64 \
+2.6.32-954.3.5.lve1.4.63.el6.x86_64 \
 2.6.32-71.el6.x86_64
 
 5) Move module which you want to test in "Module" directory
