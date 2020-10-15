@@ -1,7 +1,7 @@
 # Checker
 This is a simple script, which can check your module compilation with different headers (only for Centos and Cloud Linux).
 
-!!!Attention this script expects you to build your module in directory "/lib/modules/`uname -r`/build" otherwise this script cannot work. !!!
+!!!Attention this script expects your module to look for needed linux-headers in directory "/lib/modules/`uname -r`/build" otherwise this script cannot work. !!!
 
 
 # How to use it:
