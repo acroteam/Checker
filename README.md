@@ -24,6 +24,15 @@ Example of file "versions":
 
 
 7) You are ready to test your module, run command in "general" directory \
-run command: "docker run --rm -v $(pwd)/LinuxHeaders:/LinuxHeader -v $(pwd)/Module:/Module -v $(pwd)/checker:/checker checker /checker/checkscript.sh /Module/PATH_TO_MODULE_MAKEFILE /checker" 
+run command: 
+"docker run --rm \
+-u 1000:1000 \
+-v $(pwd)/LinuxHeaders:/LinuxHeader \
+-v $(pwd)/Module:/Module \
+-v $(pwd)/checker:/checker \
+checker \
+/checker/checkscript.sh \
+/Module/PATH_TO_MODULE_MAKEFILE \
+/checker" 
 
 8) If you need to change something (add new header or change testing module) start from step 4).
