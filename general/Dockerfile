@@ -6,11 +6,5 @@ RUN yum -y install elfutils-libelf-devel
 RUN yum -y install gcc
 RUN yum -y install make
 RUN yum -y install perl
-#RUN mkdir /LinuxHeaders
-#RUN mkdir checker
-#RUN mkdir Module 
-#COPY ./LinuxHeaders /LinuxHeaders
-#COPY checker /checker
-#COPY Module /Module
 
 
