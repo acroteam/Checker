@@ -9,7 +9,7 @@ This is a simple script, which can check your module compilation with different 
 2) Build image using Dockerfile, run command in "general" directory \
 run command: "docker build -t checker ."
 
-3) Make directory named "Module" and "LinuxHeaders" inf "general directory
+3) Make directory named "Module" and "LinuxHeaders" in "general directory
 4) Download needed headers and move it to "LinuxHeaders" directory.
 5) There is a file named "versions" in directory "checker" add all names of headers you download.
 
@@ -27,7 +27,7 @@ Example of file "versions":
 run command: 
 "docker run --rm \
 -u 1000:1000 \
--v $(pwd)/LinuxHeaders:/LinuxHeader \
+-v $(pwd)/LinuxHeaders:/LinuxHeaders \
 -v $(pwd)/Module:/Module \
 -v $(pwd)/checker:/checker \
 checker \
